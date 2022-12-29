@@ -57,7 +57,7 @@ ROOT_URLCONF = 'vehicle.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,8 +85,8 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
-                   'init_command':"SET sql_mode='STRICT_TRANS_TABLES'"
-                   }      
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
@@ -127,18 +127,18 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-LOGIN_URL='/login/'
-EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
+LOGIN_URL = '/login/'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT= 587
-EMAIL_HOST_USER='sailauthority31@gmail.com'
-EMAIL_HOST_PASSWORD='rnkxwmbahrxobwpv'
-EMAIL_USE_TLS= True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sailauthority31@gmail.com'
+EMAIL_HOST_PASSWORD = 'rnkxwmbahrxobwpv'
+EMAIL_USE_TLS = True
 #host: EMAIL_HOST
 #port: EMAIL_PORT
 #username: EMAIL_HOST_USER
